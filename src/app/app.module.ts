@@ -7,6 +7,7 @@ import { HiWorldComponent } from './hi-world/hi-world.component';
 import { HelloComponent } from './hello/hello.component';
 import { NewTestComponent } from './new-test/new-test.component';
 import { GreetingDiegoComponent } from './greeting-diego/greeting-diego.component';
+import { GreetingComponent } from './greeting/greeting.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GreetingDiegoComponent } from './greeting-diego/greeting-diego.componen
     HiWorldComponent,
     HelloComponent,
     NewTestComponent,
-    GreetingDiegoComponent
+    GreetingDiegoComponent,
+    GreetingComponent
   ],
   imports: [
     BrowserModule,
