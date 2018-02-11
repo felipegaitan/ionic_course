@@ -1,8 +1,13 @@
+
+<p *ngIf="!greeting else showGreeting">Enter the greeting inside of the box below</p>
+<ng-template #showGreeting>
+  <p>Que lo llene bien!</p>
+  <button (click)="sayHello()">El mismo botón</button>
+</ng-template>
 <p>
   {{greeting.toUpperCase()}}
-  
-  
-  {{ 1+1 }}
-
 </p>
-
+<hr>
+<button *ngIf="!greeting" (click)="sayHello()">Decir Hola</button>
+<hr>
+<input type="text" [(ngModel)]="greeting">

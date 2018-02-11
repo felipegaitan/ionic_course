@@ -8,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class HelloComponent implements OnInit {
 
   greeting: string;
+  hiMessage: string;
 
   constructor() {
-    this.greeting = 'Texto de Hellocomponent';
+    this.greeting = '';
+    this.hiMessage = 'Hi Message';
   }
 
   ngOnInit() {
 
   }
 
+  sayHello() {
+    alert(this.hiMessage);
+  }
 }
