@@ -7,23 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetingDiegoComponent implements OnInit {
 
-  people: [ {name: string, lastname: string} ];
-
   constructor() {
-    this.people = [
-      {
-        name: 'Diego' ,
-        lastname: 'Gaitan'
-      },
-      {
-        name: 'Adriana' ,
-        lastname: 'Garcia'
-      },
-      {
-        name: 'Lucas',
-        lastname: 'Gaitan'
-       }
-      ];
   }
 
   ngOnInit() {
