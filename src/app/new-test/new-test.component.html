@@ -1,0 +1,9 @@
+<p *ngIf="!greeting; else showYouDidIt">Hey, PLEASE INSERT SOME TEXT!!!!!!!</p>
+<ng-template #showYouDidIt>
+  <p>YOU DID IT MATE ... YOU ARE NOT STUPID JAJAJAJA</p>
+</ng-template>
+<p>
+  {{ greeting }} <br>
+  <input type="text" [(ngModel)]="greeting" >
+</p>
+

@@ -12,4 +12,8 @@ export class HiWorldComponent implements OnInit {
   ngOnInit() {
   }
 
+  heyWorld() {
+    alert( 'Hey Juan' );
+  }
+
 }
