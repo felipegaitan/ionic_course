@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PEOPLE } from '../greeting-diego/Person/person';
 
 @Component({
   selector: 'app-hi-world',
@@ -7,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HiWorldComponent implements OnInit {
 
+  people = PEOPLE;
+
   constructor() { }
 
   ngOnInit() {
-  }
-
-  heyWorld() {
-    alert( 'Hey Juan' );
   }
 
 }

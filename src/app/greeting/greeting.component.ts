@@ -12,9 +12,9 @@ export class GreetingComponent implements OnInit {
   constructor() {
     this.names = [
       {name: 'Juan', lastName: 'López'},
-      {name: 'Pablo'},
-      {name: 'Diego'},
-      {name: 'Felipe'}
+      {name: 'Pablo', lastName: ''},
+      {name: 'Diego', lastName: 'Gaitán'},
+      {name: 'Felipe', lastName: ''}
     ];
 
    }
