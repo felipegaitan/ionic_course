@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Person, PEOPLE } from '../greeting/person/person';
 
 @Component({
   selector: 'app-greeting',
@@ -7,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetingComponent implements OnInit {
 
-  names: [{name: String, lastName: String}];
+  people = PEOPLE;
+  // names: [{name: String, lastName: String}];
 
   constructor() {
-    this.names = [
+    /*this.names = [
       {name: 'Juan', lastName: 'López'},
       {name: 'Pablo'},
       {name: 'Diego'},
       {name: 'Felipe'}
-    ];
+    ];*/
 
    }
 

@@ -1,7 +1,8 @@
-<div>
+<div>Greeting
   <ul>
     <!--li *ngFor="let name of names">{{name | json}}</li-->
-    <li *ngFor="let name of names">{{name.name}} {{name.lastName}}</li>
+    <!--li *ngFor="let name of names">{{name.name}} {{name.lastName}}</li-->
+    <li *ngFor="let person of people">{{person.name}} {{person.lastName}}</li>
   </ul>
 </div>
 
