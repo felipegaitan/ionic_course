@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PEOPLE } from '../greeting-diego/Person/person';
+import { PEOPLE , Person } from '../person/person';
 
 @Component({
   selector: 'app-hi-world',
@@ -9,8 +9,13 @@ import { PEOPLE } from '../greeting-diego/Person/person';
 export class HiWorldComponent implements OnInit {
 
   people = PEOPLE;
+  personName: Person;
 
   constructor() { }
+
+  addPerson(personName) {
+    this.people.push({name: personName, lastname: ''});
+  }
 
   ngOnInit() {
   }

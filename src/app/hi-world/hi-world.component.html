@@ -1,9 +1,4 @@
-<p>
-  <button (click)="heyWorld()">Hola</button>
-</p>
+<input type="text" [(ngModel)]="personName">
+<button (click)="addPerson(personName)">Add</button>
 
-<br>
-<strong>BRINGING THE CONSTANT PEOPLE FROM GREETING-DIEGO</strong>
-<ul>
-  <li *ngFor="let person of people">{{ person.name }} {{ person.lastname }}</li>
-</ul>
+<app-greeting-diego *ngFor="let person of people" [person]="person"></app-greeting-diego>

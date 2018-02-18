@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
+import { Person } from '../person/person';
 
 @Component({
   selector: 'app-greeting-diego',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./greeting-diego.component.css']
 })
 export class GreetingDiegoComponent implements OnInit {
+
+  @Input( ) person: Person;
 
   constructor() {
   }
