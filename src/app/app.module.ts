@@ -8,6 +8,7 @@ import { HelloComponent } from './hello/hello.component';
 import { NewTestComponent } from './new-test/new-test.component';
 import { GreetingDiegoComponent } from './greeting-diego/greeting-diego.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { PersonNameUpperCasePipe } from './pipes/person-name-upper-case.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GreetingComponent } from './greeting/greeting.component';
     HelloComponent,
     NewTestComponent,
     GreetingDiegoComponent,
-    GreetingComponent
+    GreetingComponent,
+    PersonNameUpperCasePipe
   ],
   imports: [
     BrowserModule,
