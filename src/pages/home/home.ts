@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
-import { CortinasPage } from '../cortinas/cortinas';
+//import { CortinasPage } from '../cortinas/cortinas';
 
 /**
  * Generated class for the HomePage page.
@@ -20,7 +20,7 @@ export class HomePage {
   
   
   navigateToCortinasPage():void{
-    this.navCtrl.push(CortinasPage);
+    this.navCtrl.push('CortinasPage');
   }
 }
 
