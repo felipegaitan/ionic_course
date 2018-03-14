@@ -7,13 +7,11 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
-import { NewTestPage } from '../pages/new-test/new-test';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    NewTestPage
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -22,8 +20,7 @@ import { NewTestPage } from '../pages/new-test/new-test';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    NewTestPage
+    HomePage
   ],
   providers: [
     StatusBar,
