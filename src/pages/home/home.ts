@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
-//import { CortinasPage } from '../cortinas/cortinas';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the HomePage page.
@@ -8,6 +7,7 @@ import { NavController, IonicPage } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+
 @IonicPage()
 @Component({
   selector: 'page-home',
@@ -15,13 +15,16 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+   
   }
-  
-  
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
+  }
+
   navigateToCortinasPage():void{
     this.navCtrl.push('CortinasPage');
   }
+
 }
-
-

@@ -6,12 +6,12 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HomePage } from '../pages/home/home';
+//import { HomePage } from '../pages/home/home';
 //import { CortinasPage } from '../pages/cortinas/cortinas'
 
 @NgModule({
   declarations: [
-    MyApp,
+    MyApp/*,
     HomePage/*,
     CortinasPage*/
   ],
@@ -21,7 +21,7 @@ import { HomePage } from '../pages/home/home';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    MyApp/*,
     HomePage/*,
     CortinasPage*/
   ],
