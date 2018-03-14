@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the HomePage page.
@@ -15,11 +15,11 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  navigateToTestPAge(): void{
-    this.navCtrl.push('NewTestPage');
+  goToTestPage(): void {
+    this.navCtrl.push('NewTestPage' );
   }
 
 }
