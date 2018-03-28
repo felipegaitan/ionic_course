@@ -19,7 +19,7 @@ export class HomePage {
   }
 
   goToTestPage(): void {
-    this.navCtrl.push('NewTestPage' );
+    this.navCtrl.push('NewTestPage');
   }
 
 }
