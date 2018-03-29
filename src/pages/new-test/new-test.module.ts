@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { NewTestPage } from './new-test';
-import { ComponentsModule } from '../../components/components.module';
-// import { FriendsListModule } from '../../components/friends-list/friends-list.module';
+import { FriendsListModule } from '../../components/friends-list/friends-list.module';
+import { HomeButtonModule } from '../../components/home-button/home-button.module';
+
 @NgModule({
   declarations: [
     NewTestPage,
   ],
   imports: [
     IonicPageModule.forChild(NewTestPage),
-    // FriendsListModule,
-    ComponentsModule
+    FriendsListModule,
+    HomeButtonModule
   ],
 })
 export class NewTestPageModule {}

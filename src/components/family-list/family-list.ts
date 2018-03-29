@@ -15,7 +15,7 @@ export class FamilyListComponent {
   text: string;
 
   constructor() {
-    console.log('Hello FamilyListComponent Component');
+    // console.log('Hello FamilyListComponent Component');
     this.text = 'Family List';
   }
 

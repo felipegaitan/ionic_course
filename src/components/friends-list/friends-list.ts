@@ -15,7 +15,7 @@ export class FriendsListComponent {
   text: string;
 
   constructor() {
-    console.log('Hello FriendsListComponent Component');
+    // console.log('Hello FriendsListComponent Component');
     this.text = 'Friends List';
   }
 
