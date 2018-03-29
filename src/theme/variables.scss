@@ -34,12 +34,16 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:    (
+    base: #2196f3,
+    contrast: #fff 
+  ),
+  secondary:  (
+    base: #ab47bc,
+    contrast: #fff
+  )
 );
+// https://material.io/color/#!/?view.left=1&view.right=0&primary.color=2195f2&secondary.color=ab47bc
 
 
 // App iOS Variables
