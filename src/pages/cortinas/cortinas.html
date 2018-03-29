@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Cortinas</ion-title>
+  <ion-navbar color="cortinas">
+    <ion-title text-center>Cortinas</ion-title>
   </ion-navbar>
  
 
@@ -15,9 +15,15 @@
 
 
 
-<ion-content padding >
-    <navigate-to-page></navigate-to-page>
+<ion-content padding>
+
+  <ion-fab bottom right>
+    <button ion-fab color='buttonPage'>+</button>
+  </ion-fab>
+
+  <navigate-to-page pageToMove="Enrollables"></navigate-to-page>
   <cortinas-list></cortinas-list>
+  {{message}}
   <ion-item>Enrollables</ion-item>
   <ion-item>Duo/Sheer</ion-item>
   <ion-item>Celular</ion-item>

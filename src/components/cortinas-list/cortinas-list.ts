@@ -15,8 +15,8 @@ export class CortinasListComponent {
   text: string;
 
   constructor() {
-    console.log('Hello CortinasListComponent Component');
-    this.text = 'Hello World';
+    //console.log('Hello CortinasListComponent Component');
+    //this.text = 'Hello World';
   }
 
 }

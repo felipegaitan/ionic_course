@@ -17,11 +17,13 @@ export class NavigateToPageComponent {
 
   constructor(private navCtrl: NavController, private navParams: NavParams) {
     //console.log('Hello NavigateToPageComponent Component');
-   // this.pageTo = this.navParams.get('pageTo');
+    console.log('-------->',this.navParams.get('pageToMove'));
   }
 
   navigateToPage(pageTo:String):void{
     this.navCtrl.push(this.pageTo);
+    //this.navCtrl.popToRoot();
+    //this.navCtrl.setRoot('CortinasPage'); //Va directo a Home
   }  
 
 }
