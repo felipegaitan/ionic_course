@@ -15,16 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, private navParams: NavParams) {
    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+    //console.log(this.navParams);
   }
 
   navigateToCortinasPage():void{
-    this.navCtrl.push('CortinasPage');
+    this.navCtrl.push('CortinasPage',{
+      message:'****CortinasPage****'
+    });
   }
 
 }
