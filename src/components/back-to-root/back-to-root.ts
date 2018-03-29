@@ -2,22 +2,22 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 /**
- * Generated class for the HomeButtonComponent component.
+ * Generated class for the BackToRootComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
 @Component({
-  selector: 'home-button',
-  templateUrl: 'home-button.html'
+  selector: 'back-to-root',
+  templateUrl: 'back-to-root.html'
 })
-export class HomeButtonComponent {
+export class BackToRootComponent {
 
   constructor(private navCtrl: NavController) {
   }
 
-  navigateToHome(): void {
-    this.navCtrl.popToRoot();
+  backToRoot(): void{
+    this.navCtrl.setRoot('HomePage');
   }
 
 }

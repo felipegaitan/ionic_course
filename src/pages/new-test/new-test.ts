@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams, NavController } from 'ionic-angular';
 
 /**
  * Generated class for the NewTestPage page.
@@ -15,11 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewTestPage {
 
-  constructor(private navCtrl: NavController, private navParams: NavParams) {
+  message: string;
+
+  constructor(private navParams: NavParams, private navCtrl: NavController) {
+    this.message = this.navParams.get('message');
   }
 
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad NewTestPage');
+  goToThingsPage() {
+    this.navCtrl.push('ThingsPage');
   }
 
 }
